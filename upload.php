@@ -14,30 +14,21 @@ function generateRandomString($length = 10) {
     return $randomString;
 }
  
-if(isset($_POST['secret']))
-{
-    if($_POST['secret'] == $secret_key)
-    {
+if(isset($_POST['secret'])) {
+    if($_POST['secret'] == $secret_key) {
         $filename = generateRandomString($lengthofstring);
         $target_file = $_FILES["sharex"]["name"];
         $fileType = pathinfo($target_file, PATHINFO_EXTENSION);
  
-        if (move_uploaded_file($_FILES["sharex"]["tmp_name"], $sharexdir.$filename.'.'.$fileType))
-        {
+        if (move_uploaded_file($_FILES["sharex"]["tmp_name"], $sharexdir.$filename.'.'.$fileType)) {
             echo $domain_url.$sharexdir.$filename.'.'.$fileType;
-        }
-            else
-        {
+        } else {
            echo 'File upload failed - CHMOD/Folder doesn\'t exist?';
         }  
-    }
-    else
-    {
+    } else {
         echo 'Invalid Secret Key';
     }
-}
-else
-{
+} else {
     echo 'Failed to upload, reason unknown';
 }
 ?>
