@@ -1,13 +1,11 @@
 <?php
-include config.php
-
-$secret_key = echo $secretKey; // Secret key, to prevent other people from uploading
+$secret_key = "1m@g3h0sTinG"; // Secret key, to prevent other people from uploading
 $sharexdir = "files/"; // Directory for images
 $domain_url = 'https://thedudeinthecorner.xyz/'; // URL of the image site
 $lengthofstring = 5; //Length of the file name
  
-function generateRandomString($length = 10) {
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+function generateRandomString($length = 10) { // Generate a random string for the image URL
+    $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789';
     $charactersLength = strlen($characters);
     $randomString = '';
 
@@ -33,5 +31,4 @@ if(isset($_POST['secret'])) {
     }
 } else {
     echo 'Failed to upload, reason unknown';
-}
-?>
+} ?>
