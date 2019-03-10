@@ -24,7 +24,7 @@ if(isset($_POST['secret'])) {
         if (move_uploaded_file($_FILES["sharex"]["tmp_name"], $sharexdir.$filename.'.'.$fileType)) {
             echo $domain_url.$sharexdir.$filename.'.'.$fileType;
         } else {
-           echo 'File upload failed - configured folder doesn''t exist';
+           echo 'File upload failed - configured folder does not exist';
         }  
     } else {
         echo 'Your key is invalid!';
