@@ -1,3 +1,7 @@
 npm-debug.log
 /node_modules
 /src/cookiebanner.min.js
+<<<<<<< HEAD
+=======
+/private/config.php
+>>>>>>> parent of 7e4182b... stuff
