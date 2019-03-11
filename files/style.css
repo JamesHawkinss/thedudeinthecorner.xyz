@@ -5,8 +5,11 @@
 
 /* CSS code*/
 
+body {
+	background-color: #333333;
+}
+
 .main {
     font-family: 'Roboto', sans-serif;
-    background-color: #333333;
     padding-left: 10px;
 }
