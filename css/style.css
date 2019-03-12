@@ -9,12 +9,9 @@ body {
 	background: linear-gradient(to left, #285696, #143666);
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	padding: 30px;
 }
 
 .main {
 	margin: auto;
-    width: 100px;
-    height: 100px;
-	position: absolute;
+	padding: 35px;
 }
