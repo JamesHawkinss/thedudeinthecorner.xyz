@@ -1,5 +1,5 @@
 <?php
-$secret_key = "1m@g3h0sTinG"; //Set this as your secret key, to prevent others uploading to your server.
+$secret_key = "key"; //Set this as your secret key, to prevent others uploading to your server.
 $sharexdir = "files/"; //This is your file dir, also the link..
 $domain_url = 'https://thedudeinthecorner.xyz/';
 $lengthofstring = 5; //Length of the file name
