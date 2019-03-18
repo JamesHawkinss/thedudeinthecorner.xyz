@@ -26,9 +26,9 @@ if(isset($_POST['secret'])) {
            echo 'File upload failed - CHMOD/Folder doesn\'t exist?';
         }  
     } else {
-        echo 'Invalid Secret Key';
+        echo 'Upload failed - Invalid Secret Key';
     }
 } else {
-    echo 'Failed to upload, reason unknown';
+    echo 'Upload failed - Please use ShareX';
 }
 ?>
