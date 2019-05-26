@@ -1,7 +1,7 @@
 <?php
 $secret_key = "key"; //Set this as your secret key, to prevent others uploading to your server.
-$sharexdir = "binary/"; //This is your file dir, also the link..
-$domain_url = 'https://thedudeinthecorner.xyz/';
+$sharexdir = "files/"; //This is your file dir, also the link..
+$domain_url = 'https://i.thedudeinthecorner.xyz/';
 $lengthofstring = 5; //Length of the file name
  
 function generateRandomString($length = 10) {
