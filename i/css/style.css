@@ -6,9 +6,10 @@
 /* CSS code*/
 
 body {
-	background: linear-gradient(to left, #285696, #143666);
+	background: #3b4d81;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
+	color: #e2e2e2;
 }
 
 .main {
